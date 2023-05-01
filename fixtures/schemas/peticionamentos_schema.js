@@ -12,7 +12,7 @@ module.exports = {
                             filename: Joi.string().required(),
                             arquivo: Joi.string().required(),
                             arquivo_original: Joi.string().required(),
-                            versaoPdf: Joi.string().required(),
+                            versaoPdf: Joi.string().allow(''),
                             extensao: Joi.string().required()
                             })),
                 data: Joi.string().isoDate().required(),
